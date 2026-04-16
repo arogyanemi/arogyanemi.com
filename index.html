@@ -1182,6 +1182,130 @@ body:has(button:hover) .cursor {
 
 
 <!-- ══════════════════════════
+     MISIÓN · VISIÓN
+══════════════════════════ -->
+
+<style>
+.mision {
+  background: var(--bg);
+  padding: 100px 52px;
+  position: relative;
+  overflow: hidden;
+}
+.mision-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.mision-card {
+  position: relative;
+  padding: 44px 40px;
+  border: 1px solid var(--cream-w);
+  border-radius: 2px;
+  overflow: hidden;
+  transition: border-color .3s;
+}
+.mision-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 2px;
+  background: var(--earth);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform .5s cubic-bezier(.16,1,.3,1);
+}
+.mision-card:hover::before { transform: scaleY(1); }
+.mision-card:hover { border-color: var(--cream-w); }
+.mision-tag {
+  font-family: 'Jost', sans-serif;
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--earth);
+  margin-bottom: 20px;
+  display: block;
+}
+.mision-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(26px, 2.8vw, 38px);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--forest);
+  line-height: 1.25;
+  margin-bottom: 28px;
+}
+.mision-body {
+  font-size: 13.5px;
+  line-height: 2.1;
+  color: var(--olive);
+  opacity: .85;
+  margin-bottom: 16px;
+}
+.mision-body-en {
+  font-size: 13px;
+  line-height: 2;
+  color: var(--sage);
+  opacity: .7;
+  font-style: italic;
+  padding-top: 16px;
+  border-top: 1px solid var(--cream-w);
+  margin-top: 4px;
+}
+.mision-rule {
+  width: 32px;
+  height: 1px;
+  background: var(--earth);
+  margin-bottom: 24px;
+  opacity: .5;
+}
+@media(max-width:860px){
+  .mision { padding: 80px 24px; }
+  .mision-inner { grid-template-columns: 1fr; gap: 40px; }
+}
+</style>
+
+<div class="s-divider"></div>
+
+<section class="mision sr" id="mision">
+  <div class="mision-inner">
+
+    <!-- MISIÓN -->
+    <div class="mision-card sr">
+      <span class="mision-tag">Misión · Mission</span>
+      <div class="mision-rule"></div>
+      <h3 class="mision-title">Acompañar el proceso.<br>No solo el síntoma.</h3>
+      <p class="mision-body">
+        Acompaño a cada persona a entender el origen de su desequilibrio y a retomar el control consciente de su salud. Lo que no se nombra, el cuerpo lo expresa — y aquí hay espacio para nombrarlo todo: con escucha real, con información clara y con la intención de sanar desde adentro, apoyándonos en la herbolaria, la homeopatía y la medicina integrativa.
+      </p>
+      <p class="mision-body-en">
+        I walk with each person toward understanding the root of their imbalance and reclaiming conscious ownership of their health. What goes unspoken, the body finds a way to express — and here there is space to speak it all: with genuine listening, with clear information, and with the intention to heal from within, drawing on herbal medicine, homeopathy, and integrative medicine.
+      </p>
+    </div>
+
+    <!-- VISIÓN -->
+    <div class="mision-card sr sr-d1">
+      <span class="mision-tag">Visión · Vision</span>
+      <div class="mision-rule"></div>
+      <h3 class="mision-title">La comprensión<br>que ningún medicamento da.</h3>
+      <p class="mision-body">
+        Que cada persona que pase por Arogya·Nemi salga con algo que ningún medicamento puede dar: la comprensión de su propio proceso. Que diez años después puedan decir que aquí encontraron el apoyo, el espacio y el criterio médico necesario para tomar las riendas de su salud y bienestar integral.
+      </p>
+      <p class="mision-body-en">
+        That every person who comes through Arogya·Nemi leaves with something no medication alone can provide: an understanding of their own process. That ten years from now, they can say that here they found the support, the space, and the medical guidance they needed to take true ownership of their health and whole-body wellbeing.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<div class="s-divider"></div>
+
+
+<!-- ══════════════════════════
      SERVICIOS
 ══════════════════════════ -->
 <section class="services" id="servicios">
